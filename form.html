@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table align="center" width="40%">
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" name="textusername" id="username" placeholder="Siti" pattern="[A-Za-z ]+"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="textpassword" id="password" placeholder="********"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" id="laki" value="laki">
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="textalamat" id="alamat" rows="4" cols="50" placeholder="Alamat lengkap"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select name="textjur" id="textjur">
+                        <optgroup label="FTD">
+                            <option value="TI">Teknik Informatika</option>
+                            <option value="SI">Sistem Informasi</option>
+                            <option value="DKV">Desain Komunikasi Visual</option>
+                        </optgroup>
+                        <optgroup label="FEB">
+                            <option value="AK">Akuntansi</option>
+                            <option value="MB">Manajemen</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Usia</td>
+                <td><input type="number" name="textusia" id="usia" min="18" max="100"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td><input type="date" name="texttanggallahir" id="tanggallahir" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Kirim">
+                    <input type="reset" value="Batal">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
